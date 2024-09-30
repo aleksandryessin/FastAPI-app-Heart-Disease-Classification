@@ -25,24 +25,7 @@ MODEL = load_model(MODEL_PATH)
 
 @app.route("/")
 def helthcheck():
-    return "Heart-desease prediction service is running!"
-
-# {
-#             "age": [56.0],
-#             "sex": [1.0],
-#             "cp": [1.0],
-#             "trestbps": [130],
-#             "chol": [240],
-#             "fbs": [0.0],
-#             "restecg": [1.0],
-#             "thalach": [152],
-#             "exang": [0.0],
-#             "oldpeak": [0.8],
-#             "slope": [1.0],
-#             "ca": [0.0],
-#             "thal": [2.0]
-# }
-# should return 1
+    return "Heart-desease classification service is running!"
 
 
 @app.route("/predict", methods=["POST"])
@@ -65,10 +48,3 @@ def prediction():
         return jsonify({"prediction": prediction})
     except Exception as e:
         return jsonify({"error": str(e)})
-
-
-def main():
-    print("Main scrypt is running.")
-
-if __name__ == '__main__':
-    main()
