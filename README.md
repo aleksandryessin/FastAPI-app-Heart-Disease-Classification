@@ -12,11 +12,20 @@ FasAPI classification problem.
 1. `git clone https://github.com/aleksandryessin/FastAPI-app-Heart-Disease-Classification.git`
 2. Run locally the notebook to explore the dataset and baseline model classification:
     - run **notebook**;
-    - ```bash
+
+    ```bash
     export PYTHONPATH=$(pwd)
+    ```
+    ```bash
     export FLASK_APP=main.py
+    ```
+    ```bash
     source .bashrc
+    ```
+    ```bash
     pytest (or with report: pytest --cov=src --cov-report=html)
+    ```
+    ```bash
     flask run
     ```
 3. 🔥 Run it with `docker-compose`:
