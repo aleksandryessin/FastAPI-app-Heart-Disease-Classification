@@ -4,14 +4,14 @@ FasAPI classification problem.
 
 ## Version
 
-0.1.0
+1.2.5
 
 
 ## Quick start
 
 1. `git clone https://github.com/aleksandryessin/FastAPI-app-Heart-Disease-Classification.git`
 2. Run locally the notebook to explore the dataset and baseline model classification:
-    - run **notebook**;
+    - run **notebook** to see the results and then follow the next steps:
 
     ```bash
     export PYTHONPATH=$(pwd)
@@ -32,9 +32,10 @@ FasAPI classification problem.
 
     ```bash
     docker-compose up --build -d
-
+    ```
     or
 
+    ```bash
     docker-compose build --no-cache && docker-compose up -d
     ```
 
@@ -59,3 +60,5 @@ data_example = {
             "thal": [2.0]
 }
 ```
+
+You can observe the **Postman** results example in **images**.
