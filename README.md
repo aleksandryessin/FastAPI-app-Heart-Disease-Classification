@@ -1,16 +1,6 @@
-# my_project
+# Heart-Disease-Classification
 
 FasAPI classification problem.
-
-## Author
-
-Aleksandr
-
-
-## Description
-
-FasAPI classification problem.
-
 
 ## Version
 
