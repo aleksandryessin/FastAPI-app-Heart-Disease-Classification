@@ -1,0 +1,11 @@
+version: "3"
+
+
+services:
+  fastapi:
+    container_name: fastapi
+    command: python3 main.py
+    restart: always
+    build:
+      context: "."
+      dockerfile: Dockerfile
